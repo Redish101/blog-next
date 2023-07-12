@@ -1,0 +1,20 @@
+.count {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.container {
+  margin: 5px;
+  text-align: center;
+}
+
+.data {
+  font-size: 1.40625rem;
+  text-align: center;
+}
+
+.label {
+  font-size: 0.875rem;
+  text-align: center;
+}

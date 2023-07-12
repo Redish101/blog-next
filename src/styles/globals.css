@@ -1,0 +1,223 @@
+:root {
+  --bg: #f2f5f8;
+  --card-bg: #fff;
+  --text: #37475b;
+  --text-l: #64778b;
+  --title: #475c6e;
+  --hr: #e6e8ed;
+  --link: #007bff;
+  --link-hover: #007bff;
+  --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
+  --shadow: 0 4px 10px rgba(0, 2, 4, 0.06), 0 0 1px rgba(0, 2, 4, 0.11);
+  --radius: 0.5rem;
+  --pre: #fafafa;
+  --pre-comment: #6a737d;
+  --pre-string: #032f62;
+  --pre-literal: #032f62;
+  --pre-keyword: #d73a49;
+  --pre-function: #6f42c1;
+  --pre-deleted: #24292e;
+  --pre-class: #22863a;
+  --pre-property: #005cc5;
+  --pre-namespace: #6f42c1;
+  --pre-punctuation: #24292e;
+  --border: #e4e6ea;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #181c27;
+    --card-bg: #252d38;
+    --text: #c9d1d9;
+    --text-l: #ffffffa8;
+    --title: hsla(0, 0%, 100%, 0.92);
+    --hr: #414b5c;
+    --link: #58a6ff;
+    --link-hover: #007bff;
+    --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-duration: 0.15s;
+    --shadow: 0 4px 10px rgba(0, 2, 4, 0.06), 0 0 1px rgba(0, 2, 4, 0.11);
+    --radius: 0.5rem;
+    --pre: #16181d;
+    --pre-comment: #757575;
+    --pre-string: #977cdc;
+    --pre-literal: #c64640;
+    --pre-keyword: #77b7d7;
+    --pre-function: #86d9ca;
+    --pre-deleted: #fff;
+    --pre-class: #dfab5c;
+    --pre-property: #77b7d7;
+    --pre-namespace: #86d9ca;
+    --pre-punctuation: #fff;
+    --border: #465264;
+  }
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    system-ui,
+    Roboto,
+    PingFang SC,
+    Hiragino Sans GB,
+    Source Han Sans SC,
+    Noto Sans CJK SC,
+    Noto Sans SC,
+    WenQuanYi Micro Hei,
+    WenQuanYi Zen Hei,
+    Helvetica Neue,
+    Microsoft YaHei,
+    Helvetica,
+    Arial,
+    sans-serif,
+    Apple Color Emoji,
+    Segoe UI Emoji,
+    Segoe UI Symbol;
+}
+
+hr {
+  margin: 1.2rem 0;
+  border: 0;
+  height: 1px;
+  background-color: var(--hr);
+}
+
+a {
+  text-decoration: none;
+  color: var(--link);
+  transition: all 150ms ease-in-out;
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+pre {
+  color: var(--prism);
+  padding: 0;
+  overflow-wrap: normal;
+  background: var(--pre);
+  box-shadow:
+    0 0.8px 2px rgba(0, 0, 0, 0.032),
+    0 2.7px 6.7px rgba(0, 0, 0, 0.048),
+    0 12px 30px rgba(0, 0, 0, 0.08);
+  margin: 1.5rem auto;
+  overflow: auto;
+  white-space: pre;
+  word-wrap: normal;
+  border-radius: 4px;
+  -webkit-hyphens: none;
+  hyphens: none;
+  contain: content;
+  font-family:
+    ui-monospace,
+    JetBrains Mono,
+    SFMono-Regular,
+    Menlo,
+    Monaco,
+    Consolas,
+    Andale Mono,
+    Liberation Mono,
+    Ubuntu Mono,
+    Courier New,
+    monospace;
+}
+
+pre::before {
+  color: var(--text-l);
+  opacity: 0.25;
+  content: attr(data-language);
+  font-size: 1.625rem;
+  font-weight: 700;
+  position: absolute;
+  right: 0.5rem;
+  top: auto;
+  margin-bottom: -1.2rem; /* 调整此处的负值来消除上下间隙 */
+}
+
+pre code {
+  word-break: normal;
+  white-space: pre;
+  display: block;
+  overflow-x: auto;
+  color: currentColor;
+  margin-top: -1.2rem;
+  padding: 0.75rem 1rem;
+  background-color: transparent;
+  font-family:
+    ui-monospace,
+    JetBrains Mono,
+    SFMono-Regular,
+    Menlo,
+    Monaco,
+    Consolas,
+    Andale Mono,
+    Liberation Mono,
+    Ubuntu Mono,
+    Courier New,
+    monospace;
+  margin-bottom: -3rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+code {
+  display: inline;
+  max-width: auto;
+  padding: 0;
+  overflow: visible;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+pre code::-webkit-scrollbar {
+  width: 0.35rem;
+  height: 0.28rem;
+}
+
+pre code::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 0.5rem;
+}
+
+blockquote {
+  margin: 0 0 1em;
+  padding: 0.85rem;
+  background-color: var(--border);
+  border-left-width: 0.25em;
+  border-left-style: solid;
+  border-left-color: var(--text-l);
+}
+
+code {
+  background-color: var(--border);
+  color: var(--text-l);
+  padding: 0.05em 0.35em 0.1em;
+  vertical-align: 0.1em;
+  border-radius: 0.25em;
+  font-family:
+    ui-monospace,
+    JetBrains Mono,
+    SFMono-Regular,
+    Menlo,
+    Monaco,
+    Consolas,
+    Andale Mono,
+    Liberation Mono,
+    Ubuntu Mono,
+    Courier New,
+    monospace;
+}
