@@ -36,6 +36,8 @@
   padding: 10px;
   box-sizing: border-box;
   max-width: 550px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .random {
@@ -55,7 +57,7 @@
   }
 }
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 785px) {
   .container {
     display: flex;
     flex-direction: column-reverse;
