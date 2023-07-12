@@ -19,7 +19,6 @@ export default async function FriendLinks() {
   const data: FriendLink[] = await fetch(config.friendLinks!).then((res) => {
     return res.json();
   });
-  getAllPosts();
   return (
     <div className={styles.container}>
       {data.map((item) => {

@@ -1,14 +1,15 @@
 import fs from "fs";
 import { join } from "path";
 import matter from "gray-matter";
+import { cache } from "react";
 
 const postsDirectory = join(process.cwd(), "posts");
 
-export function getPostSlugs() {
+export const getPostSlugs = cache(() => {
   return fs.readdirSync(postsDirectory);
-}
+});
 
-export function getPostBySlug(slug: string, fields: string[] = []) {
+export const getPostBySlug = cache((slug: string, fields: string[] = []) => {
   type Items = {
     [key: string]: string;
   };
@@ -39,12 +40,12 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
   });
 
   return items;
-}
+});
 
-export function getAllPosts(fields: string[] = []) {
+export const getAllPosts = cache((fields: string[] = []) => {
   const slugs = getPostSlugs();
   const posts = slugs
     .map((slug) => getPostBySlug(slug, fields))
     .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
   return posts;
-}
+});
