@@ -89,12 +89,11 @@ export default function Layout(props: LayoutProps) {
         <Card label="推荐文章">
           {posts.map((item) => {
             return (
-              <div>
+              <div key={item.slug}>
                 <div className={styles("random_date")}>{item.date}</div>
                 <Link
                   href={"/post/" + item.slug}
                   className={styles("random")}
-                  key={item.slug}
                 >
                   {item.title}
                   <hr />
