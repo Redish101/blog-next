@@ -1,12 +1,17 @@
 import { PostCard } from "@/components/Card";
 import { getAllPosts } from "@/core";
-import styles from "@/styles/app/home.module.css";
 import moment from "moment";
 import Link from "next/link";
 
+import style9 from "style9";
+
+const styles = style9.create({
+  container: { display: "flex", justifyContent: "space-between" },
+});
+
 function Footer(props: { date: string; url: string }) {
   return (
-    <div className={styles.container}>
+    <div className={styles("container")}>
       <div>{props.date}</div>
       <Link href={props.url}>继续阅读</Link>
     </div>

@@ -1,9 +1,19 @@
-import styles from "@/styles/app/links.module.css";
 import config from "@/../site.config";
 import { Metadata } from "next";
 import Card from "@/components/Card";
 import Link from "next/link";
-import { getAllPosts } from "@/core";
+
+import style9 from "style9";
+
+const styles = style9.create({
+  container: {
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "space-between",
+  },
+  item: { width: "100%" },
+  item_text: { color: "var(--text)" },
+});
 
 interface FriendLink {
   name: string;
@@ -20,13 +30,13 @@ export default async function FriendLinks() {
     return res.json();
   });
   return (
-    <div className={styles.container}>
+    <div className={styles("container")}>
       {data.map((item) => {
         return (
-          <div className={styles.item} key={item.name}>
+          <div className={styles("item")} key={item.name}>
             <Link href={item.link}>
               <Card>
-                <div className={styles.item_text}>
+                <div className={styles("item_text")}>
                   <h3>{item.name}</h3>
                   <p>{item.desc}</p>
                 </div>
@@ -37,7 +47,7 @@ export default async function FriendLinks() {
       })}
       <Link
         href={"https://github.com/Redish101/friend-links"}
-        className={styles.item_text}
+        className={styles("item_text")}
         style={{
           margin: "30px auto",
         }}

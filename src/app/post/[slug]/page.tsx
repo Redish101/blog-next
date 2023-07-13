@@ -30,17 +30,14 @@ export default async function Post({ params }: { params: { slug: string } }) {
     "cover",
     "content",
   ]);
-  if (post.title == null) {
+  if (!post.title) {
     return notFound();
   }
   const content = await markdownToHtml(post.content || "");
   return (
     <>
       <Card title={post.title} cover={post.cover} label={post.date.toString()}>
-        <div>
-          <div>{post.desc}</div>
-          <div dangerouslySetInnerHTML={{ __html: content }} />
-        </div>
+        <div dangerouslySetInnerHTML={{ __html: content }} />
       </Card>
     </>
   );
