@@ -169,7 +169,7 @@ export default LayoutB({ children }: { children: ReactNode }) {
 
 ## 服务端: 从 SSG 迈向 SSR
 
-在[「使用 Next.js 重构我的博客」](https://blog.redish101.top/post/blog-v5))一文中我提到，我将博客核心所使用的 CMS 从`Hexo`迁移到自研的基于文件的 CMS，在构建时使用`Next.js Pages Router`提供的`getStaticProps`等一系列 api 在构建时从本地获取文章并渲染，但在我迁移博客到`Next.js App Router`时这样的做法无法通过构建，原因是 App Router 并不支持使用`getStaticProps`等 api 获取数据。同时，在构建时渲染 Markdown 也会导致构建速度很慢，在考虑之下，我决定放弃 SSG，迈向 SSR。
+在[「使用 Next.js 重构我的博客」](https://blog.redish101.top/post/blog-v5)一文中我提到，我将博客核心所使用的 CMS 从`Hexo`迁移到自研的基于文件的 CMS，在构建时使用`Next.js Pages Router`提供的`getStaticProps`等一系列 api 在构建时从本地获取文章并渲染，但在我迁移博客到`Next.js App Router`时这样的做法无法通过构建，原因是 App Router 并不支持使用`getStaticProps`等 api 获取数据。同时，在构建时渲染 Markdown 也会导致构建速度很慢，在考虑之下，我决定放弃 SSG，迈向 SSR。
 
 但是，如果在每次访问都渲染一次文章，就会导致服务器压力激增，客户端访问速度直线上升。显然，这种做法是极其不明智的。好在，React 18 中提供了一个`cache`方法，被`cache`包裹的方法，在传参不变的情况下不会执行方法，而是直接返回缓存值，例如：
 
