@@ -91,10 +91,7 @@ export default function Layout(props: LayoutProps) {
             return (
               <div key={item.slug}>
                 <div className={styles("random_date")}>{item.date}</div>
-                <Link
-                  href={"/post/" + item.slug}
-                  className={styles("random")}
-                >
+                <Link href={"/post/" + item.slug} className={styles("random")}>
                   {item.title}
                   <hr />
                 </Link>
