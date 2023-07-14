@@ -3,6 +3,10 @@ import { join } from "path";
 import matter from "gray-matter";
 import { cache } from "react";
 
+export type Items = {
+  [key: string]: string;
+};
+
 const postsDirectory = join(process.cwd(), "posts");
 
 export const getPostSlugs = cache(() => {
@@ -10,10 +14,6 @@ export const getPostSlugs = cache(() => {
 });
 
 export const getPostBySlug = cache((slug: string, fields: string[] = []) => {
-  type Items = {
-    [key: string]: string;
-  };
-
   const items: Items = {};
   if (slug == null) {
     return items;

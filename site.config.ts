@@ -3,6 +3,11 @@ const config: SiteConfig = {
   description: "人文 科技 白日梦",
   menu: [
     {
+      key: 'home',
+      name: '首页',
+      to: '/',
+    },
+    {
       key: "links",
       name: "友链",
       to: "/links",

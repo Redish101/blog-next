@@ -6,6 +6,8 @@ import { getAllPosts } from "@/core";
 import Link from "next/link";
 
 import style9 from "style9";
+import Similarity from "./Similarity";
+
 
 const styles = style9.create({
   container: {
@@ -77,29 +79,52 @@ interface LayoutProps {
 
 const posts = getAllPosts(["title", "slug", "date"]).splice(0, 4);
 
-export default function Layout(props: LayoutProps) {
+export function Container({ children }: { children: ReactNode}) {
   return (
-    <div className={styles("container")}>
-      <aside className={styles("sidebar")}>
+    <div className={styles('container')}>
+      { children }
+    </div>
+  )
+}
+
+export function LeftSidebar() {
+  return (
+    <aside className={styles("sidebar")}>
         <Avatar />
         <Count />
       </aside>
-      <div className={styles("main")}>{props.children}</div>
-      <div className={styles("sidebar_r")}>
-        <Card label="推荐文章">
-          {posts.map((item) => {
-            return (
-              <div key={item.slug}>
-                <div className={styles("random_date")}>{item.date}</div>
-                <Link href={"/post/" + item.slug} className={styles("random")}>
-                  {item.title}
-                  <hr />
-                </Link>
-              </div>
-            );
-          })}
-        </Card>
-      </div>
+  )
+}
+
+export function Content({ children }: { children: ReactNode }) {
+  return (
+    <div className={styles("main")}>{children}</div>
+  )
+}
+
+function LatestPosts() {
+  return (
+    
+    <Card label="最近文章">
+      {posts.map((item) => {
+        return (
+          <div key={item.slug}>
+            <div className={styles("random_date")}>{item.date}</div>
+            <Link href={"/post/" + item.slug} className={styles("random")}>
+              {item.title}
+              <hr />
+            </Link>
+          </div>
+        );
+      })}
+    </Card>
+  )
+}
+
+export function RightSidebar() {
+  return (
+    <div className={styles("sidebar_r")}>
+      <LatestPosts />
     </div>
-  );
+  )
 }

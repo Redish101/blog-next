@@ -12,11 +12,35 @@ const styles = style9.create({
     height: "54px",
     backgroundColor: "var(--card-bg)",
     boxShadow: "var(--shadow)",
+    '@media screen and (max-width: 785px)': {
+      justifyContent: 'center',
+      position: 'fixed',
+      top: 0,
+      left: 0,
+      right: 0
+    },
+    zIndex: '2000'
   },
-  navbar_left: { display: "flex", alignItems: "center" },
-  navbar_right: { display: "flex", alignItems: "center" },
-  logo: { color: "var(--title)", fontSize: "18px", fontWeight: 450 },
-  menu: { color: "var(--text)", margin: "15px" },
+  navbar_left: { 
+    display: "flex",
+    alignItems: "center",
+  },
+  navbar_right: {
+    display: "flex",
+    alignItems: "center",
+  },
+  logo: {
+    color: "var(--title)",
+    fontSize: "18px",
+    fontWeight: 450
+  },
+  menu: {
+    color: "var(--text)",
+    margin: "15px",
+    '@media screen and (max-width: 785px)': {
+      display: 'none'
+    }
+  },
 });
 
 export default function NavBar() {

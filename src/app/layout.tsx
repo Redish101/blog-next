@@ -1,9 +1,10 @@
 import "@/styles/globals.css";
 
 import NavBar from "@/components/NavBar";
-import Layout from "@/components/Layout";
 import type { Metadata } from "next";
 import config from "@/../site.config";
+
+import { Container, Content, LeftSidebar, RightSidebar } from "@/components/Layout";
 
 import { Analytics } from '@vercel/analytics/react';
 
@@ -21,10 +22,14 @@ export default function RootLayout({
     <html lang="zh-CN">
       <body>
         <NavBar />
-        <div>
-          <Layout>{children}</Layout>
-          <Analytics />
-        </div>
+        <Container>
+          <LeftSidebar />
+          <Content>
+            { children }
+          </Content>
+          <RightSidebar />
+        </Container>
+        <Analytics />
       </body>
     </html>
   );
