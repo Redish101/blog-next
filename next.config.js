@@ -13,12 +13,11 @@ module.exports = withStyle9({
       ],
     ],
     plugins: ["typescript", "jsx"],
-  }, // // {import('@babel/core').ParserOptions} optional, default is `{ plugins: ['typescript', 'jsx'] }`
-  minifyProperties: process.env.NODE_ENV === "production", // {boolean?} optional, default is false, recommended to enable this option in production
-  incrementalClassnames: false, // {boolean?} optional, default is false
+  },
+  minifyProperties: process.env.NODE_ENV === "production",
+  incrementalClassnames: false,
 })({
   reactStrictMode: true,
-  // Recommended for the `pages` directory, default in `app`.
   swcMinify: true,
   experimental: {
     appDir: true,

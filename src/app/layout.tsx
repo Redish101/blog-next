@@ -5,6 +5,8 @@ import Layout from "@/components/Layout";
 import type { Metadata } from "next";
 import config from "@/../site.config";
 
+import { Analytics } from '@vercel/analytics/react';
+
 export const metadata: Metadata = {
   title: config.name,
   description: config.description,
@@ -21,6 +23,7 @@ export default function RootLayout({
         <NavBar />
         <div>
           <Layout>{children}</Layout>
+          <Analytics />
         </div>
       </body>
     </html>

@@ -525,6 +525,8 @@ pre::before {
 
 ### 添加
 
+> 仓库: https://github.com/Redish101/friend-links
+
 如果你满足前置条件，就可以开始提交。
 
 1. Fork本仓库
