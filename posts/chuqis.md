@@ -1,7 +1,7 @@
 ---
 categories:
   - null
-cover: "https://cdn1.tianli0.top/gh/Redish101/cdn@src/img/20220718212150.png"
+cover: "https://cdn.chuqis.com/gh/Redish101/cdn@src/img/20220718212150.png"
 date: "2022-07-16 21:51:18"
 tags:
   - null
@@ -51,4 +51,4 @@ abbrlink: 4138
 >
 > 原作者版权信息：
 >
-> ![](https://cdn1.tianli0.top/gh/Redish101/cdn@src/img/20220716222002.png)
+> ![](https://cdn.chuqis.com/gh/Redish101/cdn@src/img/20220716222002.png)

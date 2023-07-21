@@ -4,7 +4,7 @@ author:
   - Redish101
 categories:
   - 教程
-cover: https://cdn1.tianli0.top/gh/Redish101/cdn@src/img/20220718215950.png
+cover: https://cdn.chuqis.com/gh/Redish101/cdn@src/img/20220718215950.png
 date: "2022-03-05 00:00:00"
 tags:
   - docsify

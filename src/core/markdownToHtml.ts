@@ -4,6 +4,20 @@ import highlightjs from "./highlight";
 export default async function markdownToHtml(markdown: string) {
   const renderer = new marked.Renderer();
 
+  let toc = []
+
+  renderer.heading = function(text, level, raw, slugger) {
+    toc.push({
+      text,
+      level
+    })
+    return `
+      <h${level} id="${text}">
+        ${text}
+      </h${level}>
+    `
+  }
+
   renderer.code = function (code, language) {
     // 添加hljs类和data-language属性
     let lang = language ? language.toUpperCase() : "";

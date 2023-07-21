@@ -7,7 +7,7 @@ categories:
 abbrlink: 36200
 date: "2022-06-10 18:52:04"
 updated: "2022-06-19 18:52:04"
-cover: "https://cdn1.tianli0.top/gh/Redish101/cdn@src/img/20220718211307.png"
+cover: "https://cdn.chuqis.com/gh/Redish101/cdn@src/img/20220718211307.png"
 ---
 
 # 这是什么
@@ -16,7 +16,7 @@ cover: "https://cdn1.tianli0.top/gh/Redish101/cdn@src/img/20220718211307.png"
 
 在前几天，GitHub将此功能开放公测，任何用户都能申请使用，我，于是就有了这篇文章。
 
-![邮件](https://cdn1.tianli0.top/gh/Redish101/cdn@src/img/20220610210634.png)
+![邮件](https://cdn.chuqis.com/gh/Redish101/cdn@src/img/20220610210634.png)
 
 # 性能
 
@@ -24,7 +24,7 @@ cover: "https://cdn1.tianli0.top/gh/Redish101/cdn@src/img/20220718211307.png"
 
 先说性能，GitHub面对个人项目提供了一台4Cores 8RAM的设备，这性能对于普通的开发那是绰绰有余，话不多说，上bench截图：
 
-![测试结果](https://cdn1.tianli0.top/gh/Redish101/cdn@src/img/20220610211120.png)
+![测试结果](https://cdn.chuqis.com/gh/Redish101/cdn@src/img/20220610211120.png)
 
 ## 网络
 

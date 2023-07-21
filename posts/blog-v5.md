@@ -98,11 +98,11 @@ export default function Post(props: props) {
 
 在众多css in js库中，我选择了`griffel`，它可以自动生成随机的类名，对于我这种起名困难党算是个福音，其次，它使用起来也十分的顺畅，只需要使用`makeStyles()`定义样式，即可通过`useStyles()`使用样式。使用它定义样式，在编码过程中ide会给出效果较好的代码提示：
 
-![](https://cdn1.tianli0.top/gh/Redish101/cdn@src/img/20230304193114.png)
+![](https://cdn.chuqis.com/gh/Redish101/cdn@src/img/20230304193114.png)
 
 在开发的过程中节约了很多时间，生成的随机类名可以很好的避免类名重复导致的错误：
 
-![](https://cdn1.tianli0.top/gh/Redish101/cdn@src/img/20230304193416.png)
+![](https://cdn.chuqis.com/gh/Redish101/cdn@src/img/20230304193416.png)
 
 ## 一言
 

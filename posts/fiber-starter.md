@@ -68,7 +68,7 @@ XHU4YmY3XHU1NzI4XHU2M2E3XHU1MjM2XHU1M2YwXHU2MjY3XHU4ODRjXHUwMDZiXHUwMDY1XHUwMDc5
 
 Github提供了方便的模板功能，进入本项目[仓库](https://github.com/Redish101/fiber-starter)，点击右上角的`Use this template`
 
-![image-20230416152821767](https://cdn1.tianli0.top/gh/Redish101/cdn@src/img/20230416152822.png)
+![image-20230416152821767](https://cdn.chuqis.com/gh/Redish101/cdn@src/img/20230416152822.png)
 
 点击`Create a new repository`，在接下来的页面内更改仓库信息，完成后，点击下方`Create repository from template`。
 
