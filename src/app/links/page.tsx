@@ -4,6 +4,7 @@ import Card from "@/components/Card";
 import Link from "next/link";
 
 import style9 from "style9";
+import Links, { FriendLink } from "@/components/Links";
 
 const styles = style9.create({
   container: {
@@ -15,11 +16,6 @@ const styles = style9.create({
   item_text: { color: "var(--text)" },
 });
 
-interface FriendLink {
-  name: string;
-  desc: string;
-  link: string;
-}
 
 export const metadata: Metadata = {
   title: `友情链接 - ${config.name}`,
@@ -36,10 +32,7 @@ export default async function FriendLinks() {
           <div className={styles("item")} key={item.name}>
             <Link href={item.link}>
               <Card>
-                <div className={styles("item_text")}>
-                  <h3>{item.name}</h3>
-                  <p>{item.desc}</p>
-                </div>
+                <Links data={item}></Links>
               </Card>
             </Link>
           </div>
