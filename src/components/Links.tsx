@@ -1,12 +1,8 @@
-'use client'
-
 export interface FriendLink {
     name: string;
     desc: string;
     link: string;
 }
-
-import config from "@/../site.config";
 
 import style9 from "style9";
 
