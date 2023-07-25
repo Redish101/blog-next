@@ -1,3 +1,5 @@
+'use client'
+
 export interface FriendLink {
     name: string;
     desc: string;
