@@ -6,7 +6,6 @@ import { getAllPosts } from "@/core";
 import Link from "next/link";
 
 import style9 from "style9";
-import Similarity from "./Similarity";
 
 
 const styles = style9.create({
@@ -63,6 +62,9 @@ const styles = style9.create({
     maxWidth: "550px",
     width: "100%",
     margin: "0 auto",
+    "@media screen and (max-width: 785px)": {
+      marginTop: '50px'
+    },
   },
   random: {
     color: "var(--text-l)",

@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 };
 
 export default async function FriendLinks() {
-  const data: FriendLink[] = await fetch(config.friendLinks!).then((res) => {
+  const data: FriendLink[] = await fetch(config.friendLinks!, { cache: 'no-cache' }).then((res) => {
     return res.json();
   });
   return (
