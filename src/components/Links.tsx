@@ -1,5 +1,3 @@
-'use client'
-
 export interface FriendLink {
     name: string;
     desc: string;
@@ -13,7 +11,7 @@ const styles = style9.create({
   item_text: { color: "var(--text)" },
 });
 
-export default async function Link({ data } : { data: FriendLink}) {
+export default async function Link({ data } : { data: FriendLink }) {
     return (
         <div className={styles("item_text")}>
                   <h3>{data.name}</h3>
