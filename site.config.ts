@@ -13,7 +13,7 @@ const config: SiteConfig = {
       to: "/links",
     },
   ],
-  friendLinks: "https://cdn.chuqis.com/gh/Redish101/friend-links/data.json",
+  friendLinks: "https://jsd.onmicrosoft.cn/gh/Redish101/friend-links/data.json",
 };
 
 export default config;
