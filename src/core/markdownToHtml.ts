@@ -1,5 +1,6 @@
 import { marked } from "marked";
 import highlightjs from "./highlight";
+import md5 from "md5";
 
 export default async function markdownToHtml(markdown: string) {
   const renderer = new marked.Renderer();
@@ -11,8 +12,9 @@ export default async function markdownToHtml(markdown: string) {
       text,
       level
     })
+    let hashedText = md5(text).slice(0, 12)
     return `
-      <h${level} id="${text}">
+      <h${level} id="${hashedText}">
         ${text}
       </h${level}>
     `

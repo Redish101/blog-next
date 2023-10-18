@@ -49,7 +49,7 @@ const styles = style9.create({
     padding: ".5rem",
     boxSizing: "border-box",
     position: "sticky",
-    height: "30p5remx",
+    height: "30px",
     top: "-10px",
     "@media screen and (max-width: 1190px)": {
       display: "none",
