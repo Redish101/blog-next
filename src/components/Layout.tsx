@@ -34,7 +34,7 @@ const styles = style9.create({
   sidebar: {
     flex: "1",
     minWidth: "200px",
-    padding: ".3rem",
+    padding: ".5rem",
     boxSizing: "border-box",
     position: "sticky",
     height: "30px",
@@ -46,10 +46,10 @@ const styles = style9.create({
   sidebar_r: {
     flex: "1",
     minWidth: "200px",
-    padding: ".3rem",
+    padding: ".5rem",
     boxSizing: "border-box",
     position: "sticky",
-    height: "30px",
+    height: "30p5remx",
     top: "-10px",
     "@media screen and (max-width: 1190px)": {
       display: "none",
@@ -57,7 +57,7 @@ const styles = style9.create({
   },
   main: {
     flex: "2",
-    padding: ".3rem 0",
+    padding: ".5rem 0",
     boxSizing: "border-box",
     maxWidth: "550px",
     width: "100%",

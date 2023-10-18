@@ -8,7 +8,7 @@ const styles = style9.create({
     backgroundColor: "var(--card-bg)",
     borderRadius: "var(--radius)",
     boxShadow: "var(--shadow)",
-    marginTop: "20px",
+    marginTop: "1rem",
     width: "100%",
   },
   title: {
