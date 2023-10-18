@@ -11,7 +11,7 @@ tags:
 title: Picgo + GitHub Action + npm 搭建超爽图床
 updated: "2022-07-08 21:20:58"
 abbrlink: 5408
-cover: "https://cdn.chuqis.com/gh/Redish101/cdn@src/img/20220718215706.png"
+cover: "https://jsd.onmicrosoft.cn/gh/Redish101/cdn@src/img/20220718215706.png"
 ---
 
 图床，用于将本地的图片上传到互联网并生成唯一的直接链接，常常用于在网站中插入图片。目前市面上有许多的公用图床，体验也都还可以，但自己的图片放在别人的服务器多少有点不放心，要是跑路了更是直接玩完。
@@ -21,7 +21,7 @@ cover: "https://cdn.chuqis.com/gh/Redish101/cdn@src/img/20220718215706.png"
 市面上有非常多的npm cdn，通过这些cdn，我们可以引用发布到npm的文件，例如本站的npm包是 `redish101-blog`，最新版本为 `1.3.656820088`，需要获取 `/public/index.html`，通过Jsdelivr Fastly引用，直接链接就是这样的:
 
 ```plaintext
-https://cdn.chuqis.com/npm/redish101-blog@1.3.656820088/public/index.html
+https://jsd.onmicrosoft.cn/npm/redish101-blog@1.3.656820088/public/index.html
 ```
 
 > 这里为什么使用Fastly而非主域名(cdn1.tianli0.top)：
@@ -53,7 +53,7 @@ npm publish # 上传到npm
 
 可以看到，第一次上传没有出现任何问题，但如果再试一次，会出现以下报错：
 
-![](https://cdn.chuqis.com/gh/Redish101/cdn@src/img/20220703211438.png)
+![](https://jsd.onmicrosoft.cn/gh/Redish101/cdn@src/img/20220703211438.png)
 
 这是因为npm不允许发布重复的版本，我们需要手动更新 `package.json`中的 `version`字段更改版本，版本号需要符合[语义化版本](https://semver.org/lang/zh-CN/)。
 
@@ -66,7 +66,7 @@ https://你的cdn地址/包名@版本号/图片的相对路径
 但jsd是个例外：
 
 ```plaintext
-https://cdn.chuqis.com/npm/包名@版本号/相对路径
+https://jsd.onmicrosoft.cn/npm/包名@版本号/相对路径
 ```
 
 至于哪里有npm cdn可以用，请自行谷歌，101推荐eleme。
@@ -79,13 +79,13 @@ https://cdn.chuqis.com/npm/包名@版本号/相对路径
 
 首先，我们在Github新建一个仓库，仓库名随意，然后把所有图片存到这个仓库里。然后前往[npm官网](https://www.npmjs.com/)，生成一个`Access Tokens`，保留备用。
 
-![](https://cdn.chuqis.com/gh/Redish101/cdn@src/img/20220707114628.png)
+![](https://jsd.onmicrosoft.cn/gh/Redish101/cdn@src/img/20220707114628.png)
 
-![](https://cdn.chuqis.com/gh/Redish101/cdn@src/img/20220707114742.png)
+![](https://jsd.onmicrosoft.cn/gh/Redish101/cdn@src/img/20220707114742.png)
 
-![](https://cdn.chuqis.com/gh/Redish101/cdn@src/img/20220707114931.png)
+![](https://jsd.onmicrosoft.cn/gh/Redish101/cdn@src/img/20220707114931.png)
 
-![](https://cdn.chuqis.com/gh/Redish101/cdn@src/img/20220707115044.png)
+![](https://jsd.onmicrosoft.cn/gh/Redish101/cdn@src/img/20220707115044.png)
 
 回到Github，打开仓库设置=>secrets=>Action，新建一个Secret，名字为`NPM_TOKEN`，内容为刚才生成的Access Token，保存。
 
@@ -159,9 +159,9 @@ Picgo是一个图床客户端，支持Github图床，可以更加方便的上传
 
 - **仓库名**：储存图片的GitHub仓库，格式为`用户名/仓库名`
 - **分支名**：储存图片的仓库分支
-- **Token**：你的GitHub密钥，在[这里](https://github.com/settings/tokens/new)生成，按这张图片填写信息![](https://cdn.chuqis.com/gh/Redish101/cdn@src/img/20220708210252.png)
+- **Token**：你的GitHub密钥，在[这里](https://github.com/settings/tokens/new)生成，按这张图片填写信息![](https://jsd.onmicrosoft.cn/gh/Redish101/cdn@src/img/20220708210252.png)
 - **图片路径**：不用管
-- **自定义域名**：你的npm包在npm的路径，版本选择latest，这里以jsd为例：`https://cdn.chuqis.com/npm/包名@latest/图片路径`
+- **自定义域名**：你的npm包在npm的路径，版本选择latest，这里以jsd为例：`https://jsd.onmicrosoft.cn/npm/包名@latest/图片路径`
 
 保存配置并设置为默认图床。
 

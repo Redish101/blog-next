@@ -1,6 +1,6 @@
 ---
 title: "Next.js App Router初体验与实践: 将我的博客迁移到Next.js App Router与React Server Components"
-cover: https://cdn.chuqis.com/gh/Redish101/cdn@src/img/20230711114346.png
+cover: https://jsd.onmicrosoft.cn/gh/Redish101/cdn@src/img/20230711114346.png
 date: "2023-07-13 13:03:10"
 ---
 
@@ -401,7 +401,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
 
 原有代码块并没有直接显示语言，容易产生歧义。出现了以下设计方案：
 
-![两种方案](https://cdn.chuqis.com/gh/Redish101/cdn@src/img/20230712213628.png)
+![两种方案](https://jsd.onmicrosoft.cn/gh/Redish101/cdn@src/img/20230712213628.png)
 
 显然第一种更显眼并具有设计感。
 
@@ -478,7 +478,7 @@ pre::before {
 
 以往版本的博客使用单栏设计，只留出中间一栏展示所有信息，这样做实现简单，但会导致比较单调。在新博客的设计中，我采用了「双飞翼」布局，即三栏布局：
 
-![三栏布局](https://cdn.chuqis.com/gh/Redish101/cdn@src/img/20230713131357.png)
+![三栏布局](https://jsd.onmicrosoft.cn/gh/Redish101/cdn@src/img/20230713131357.png)
 
 将布局拆分为`Sidebar`与`Content`，使用Next App Router可以实现路由跳转只加载`Content`。具体实现使用`CSS Flex`布局。
 
@@ -486,7 +486,7 @@ pre::before {
 
 如你所见，本站现在的所有组件都是卡片，基础是一个具有`title`，`label`，`content`，`size`，`cover`等众多属性的组件：
 
-![布局演示](https://cdn.chuqis.com/gh/Redish101/cdn@src/img/20230713131238.png)
+![布局演示](https://jsd.onmicrosoft.cn/gh/Redish101/cdn@src/img/20230713131238.png)
 
 以此保证样式的统一。
 

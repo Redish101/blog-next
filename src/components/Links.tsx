@@ -1,10 +1,5 @@
-export interface FriendLink {
-    name: string;
-    desc: string;
-    link: string;
-}
-
 import style9 from "style9";
+import { FriendLink } from "@/../interfaces/config";
 
 const styles = style9.create({
   item: { width: "100%" },

@@ -1,7 +1,7 @@
 ---
 categories:
   - null
-cover: "https://cdn.chuqis.com/gh/Redish101/cdn@src/img/20220718212150.png"
+cover: "https://jsd.onmicrosoft.cn/gh/Redish101/cdn@src/img/20220718212150.png"
 date: "2022-07-16 21:51:18"
 tags:
   - null
@@ -51,4 +51,4 @@ abbrlink: 4138
 >
 > 原作者版权信息：
 >
-> ![](https://cdn.chuqis.com/gh/Redish101/cdn@src/img/20220716222002.png)
+> ![](https://jsd.onmicrosoft.cn/gh/Redish101/cdn@src/img/20220716222002.png)

@@ -4,10 +4,18 @@ interface MenuItem {
   to: string;
 }
 
-interface SiteConfig {
+export interface FriendLink {
+  name: string;
+  desc: string;
+  link: string;
+}
+
+
+export interface SiteConfig {
   name: string;
   description: string;
+  server: string;
   msg?: string;
   menu: MenuItem[];
-  friendLinks?: string;
+  links?: FriendLink[];
 }

@@ -1,11 +1,14 @@
+import { SiteConfig } from "./interfaces/config";
+
 const config: SiteConfig = {
   name: "Redish101 Blog",
   description: "人文 科技 白日梦",
+  server: "http://localhost:8001",
   menu: [
     {
-      key: 'home',
-      name: '首页',
-      to: '/',
+      key: "home",
+      name: "首页",
+      to: "/",
     },
     {
       key: "links",
@@ -13,7 +16,18 @@ const config: SiteConfig = {
       to: "/links",
     },
   ],
-  friendLinks: "https://cdn.jsdelivr.net/gh/Redish101/friend-links/data.json",
+  links: [
+    {
+      name: "Akilarの糖果屋",
+      desc: "欢迎光临糖果屋",
+      link: "https://akilar.top/",
+    },
+    {
+      name: "Tianli",
+      desc: "自知之明是最可贵的知识！",
+      link: "https://tianli-blog.club/",
+    },
+  ],
 };
 
 export default config;

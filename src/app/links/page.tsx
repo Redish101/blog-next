@@ -4,7 +4,8 @@ import Card from "@/components/Card";
 import Link from "next/link";
 
 import style9 from "style9";
-import Links, { FriendLink } from "@/components/Links";
+import Links from "@/components/Links";
+import { FriendLink } from "@/../interfaces/config";
 
 const styles = style9.create({
   container: {
@@ -22,9 +23,7 @@ export const metadata: Metadata = {
 };
 
 export default async function FriendLinks() {
-  const data: FriendLink[] = await fetch(config.friendLinks!, { cache: 'no-cache' }).then((res) => {
-    return res.json();
-  });
+  const data: FriendLink[] = config.links!
   return (
     <div className={styles("container")}>
       {data.map((item) => {
@@ -39,7 +38,7 @@ export default async function FriendLinks() {
         );
       })}
       <Link
-        href={"https://github.com/Redish101/friend-links"}
+        href={"https://github.com/Redish101/blog-next"}
         className={styles("item_text")}
         style={{
           margin: "30px auto",
