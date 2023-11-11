@@ -27,6 +27,11 @@ const config: SiteConfig = {
       desc: "自知之明是最可贵的知识！",
       link: "https://tianli-blog.club/",
     },
+    {
+      name: "星の野",
+      desc: "我自是年少，韶华倾负✨",
+      link: "https://byer.top/",
+    },
   ],
 };
 
