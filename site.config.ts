@@ -32,6 +32,11 @@ const config: SiteConfig = {
       desc: "我自是年少，韶华倾负✨",
       link: "https://byer.top/",
     },
+    {
+      name: "HiPeach",
+      desc: "妙不可言",
+      link: "https://blog.opeach.cn",
+    },
   ],
 };
 
