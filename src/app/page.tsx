@@ -36,7 +36,7 @@ export default async function Home() {
               }
               slug={item.slug}
             >
-              {item.content.slice(0, 150) + "..."}
+              {item.content.replaceAll("\#", "").slice(0, 150) + "..."}
             </PostCard>
           </>
         );
