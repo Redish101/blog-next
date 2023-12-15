@@ -15,6 +15,7 @@ export interface SiteConfig {
   name: string;
   description: string;
   server: string;
+  hexo?: boolean;
   msg?: string;
   menu: MenuItem[];
   links?: FriendLink[];

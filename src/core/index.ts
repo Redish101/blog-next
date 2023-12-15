@@ -2,6 +2,7 @@ import fs from "fs";
 import { join } from "path";
 import matter from "gray-matter";
 import { cache } from "react";
+import { initHexo } from "./hexo";
 
 export type Items = {
   [key: string]: string;
@@ -38,6 +39,7 @@ export const getPostBySlug = cache((slug: string, fields: string[] = []) => {
       items[field] = data[field];
     }
   });
+  
 
   return items;
 });
@@ -47,5 +49,6 @@ export const getAllPosts = cache((fields: string[] = []) => {
   const posts = slugs
     .map((slug) => getPostBySlug(slug, fields))
     .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
+  initHexo()
   return posts;
 });

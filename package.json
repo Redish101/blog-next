@@ -21,6 +21,7 @@
     "eslint": "8.44.0",
     "eslint-config-next": "13.4.9",
     "gray-matter": "^4.0.3",
+    "hexo": "^7.0.0",
     "highlight.js": "^11.8.0",
     "highlightjs": "^9.16.2",
     "marked": "^5.1.1",
