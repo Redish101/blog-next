@@ -41,7 +41,7 @@ const config: SiteConfig = {
         {
       name: "呓语梦轩",
       desc: "用心感受生活",
-      link: "https://awaae001.top",
+      link: "https://blog.awaae001.top",
     },
   ],
 };
