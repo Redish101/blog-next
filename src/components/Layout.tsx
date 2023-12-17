@@ -6,7 +6,7 @@ import { getAllPosts } from "@/core";
 import Link from "next/link";
 
 import style9 from "style9";
-
+ 
 
 const styles = style9.create({
   container: {

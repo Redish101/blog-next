@@ -61,7 +61,7 @@ export default function Card(props: CardProps) {
     <div className={styles("card")}>
       {props.cover ? (
         <img src={props.cover} alt="cover" className={styles("cover")} />
-      ) : undefined}
+      ) : void 0}
       <div className={styles("content")}>
         {props.label ? (
           <div className={props.label ? styles("label") : undefined}>

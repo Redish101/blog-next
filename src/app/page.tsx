@@ -18,28 +18,38 @@ function Footer(props: { date: string; url: string }) {
   );
 }
 
+function getPostDesc(content: string) {
+  content = content.replaceAll("#", "").slice(0, 150) + "..."
+  content = content.replaceAll("`", "")
+  return content
+}
+
 export default async function Home() {
   const allPosts = getAllPosts(["title", "date", "slug", "cover", "content"]);
   return (
     <>
       {allPosts.map((item) => {
-        return (
-          <>
-            <PostCard
-              title={item.title}
-              cover={item.cover}
-              footer={
-                <Footer
-                  date={moment(item.date).format("YYYY-MM-DD")}
-                  url={"/post/" + item.slug}
-                />
-              }
-              slug={item.slug}
-            >
-              {item.content.replaceAll("\#", "").slice(0, 150) + "..."}
-            </PostCard>
-          </>
-        );
+        if (item.content != undefined) {
+          return (
+            <>
+              <PostCard
+                title={item.title}
+                cover={item.cover}
+                footer={
+                  <Footer
+                    date={moment(item.date).format("YYYY-MM-DD")}
+                    url={"/post/" + item.slug}
+                  />
+                }
+                slug={item.slug}
+              >
+                {
+                  getPostDesc(item.content)
+                }
+              </PostCard>
+            </>
+          );
+        }
       })}
     </>
   );

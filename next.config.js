@@ -17,7 +17,6 @@ module.exports = withStyle9({
   minifyProperties: process.env.NODE_ENV === "production",
   incrementalClassnames: false,
 })({
-  output: "export",
   reactStrictMode: true,
   swcMinify: true,
   experimental: {

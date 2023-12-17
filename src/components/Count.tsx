@@ -15,7 +15,9 @@ const allPosts = getAllPosts(["content"]);
 let count = 0;
 
 allPosts.map((item) => {
-  count += item.content.length;
+  if (item.content != undefined) {
+    count += item.content.length;
+  }
 });
 
 const data = [
