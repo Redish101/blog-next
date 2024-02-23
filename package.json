@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@retalkgo/client": "0.1.0-alpha.9",
     "@types/marked": "^5.0.0",
     "@types/md5": "^2.3.4",
     "@types/node": "20.4.1",
