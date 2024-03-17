@@ -5,9 +5,7 @@ import type { Metadata } from "next";
 import config from "@/../site.config";
 
 import { Container, Content, LeftSidebar, RightSidebar } from "@/components/Layout";
-
-import { Analytics } from '@vercel/analytics/react';
-import Script from "next/script";
+import Clarity from "@/components/Clarity";
 
 export const metadata: Metadata = {
   title: config.name,
@@ -21,6 +19,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="zh-CN">
+      <head>
+        <Clarity />
+      </head>
       <body>
         <NavBar />
         <Container>
@@ -30,7 +31,6 @@ export default function RootLayout({
           </Content>
           <RightSidebar />
         </Container>
-        <Analytics />
       </body>
     </html>
   );

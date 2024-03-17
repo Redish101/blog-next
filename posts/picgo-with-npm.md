@@ -1,6 +1,4 @@
 ---
-categories:
-  - 白嫖之道
 date: "2022-07-08 21:21:53"
 tags:
   - Picgo
@@ -8,7 +6,7 @@ tags:
   - Github Action
   - npm
   - cdn
-title: Picgo + GitHub Action + npm 搭建超爽图床
+title: Picgo + GitHub Action + npm 搭建图床
 updated: "2022-07-08 21:20:58"
 abbrlink: 5408
 cover: "https://jsd.onmicrosoft.cn/gh/Redish101/cdn@src/img/20220718215706.png"

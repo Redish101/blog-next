@@ -5,9 +5,6 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  '@retalkgo/client':
-    specifier: 0.1.0-alpha.9
-    version: 0.1.0-alpha.9
   '@types/marked':
     specifier: ^5.0.0
     version: 5.0.0
@@ -47,9 +44,6 @@ dependencies:
   highlight.js:
     specifier: ^11.8.0
     version: 11.8.0
-  highlightjs:
-    specifier: ^9.16.2
-    version: 9.16.2
   marked:
     specifier: ^5.1.1
     version: 5.1.1
@@ -523,26 +517,6 @@ packages:
       open: 9.1.0
       picocolors: 1.0.0
       tslib: 2.6.0
-    dev: false
-
-  /@retalkgo/api@0.1.0-alpha.9:
-    resolution: {integrity: sha512-xhQahDPALgwbtG6X2wuzwpWH6OsFCyvUYHjp1TuxrNmCbYQwMH5O2LpOj8xut9m1PReaypbnvWN/RM5Sn2CwYw==}
-    dependencies:
-      '@retalkgo/utils': 0.1.0-alpha.9
-      defu: 6.1.2
-      type-fest: 4.3.1
-    dev: false
-
-  /@retalkgo/client@0.1.0-alpha.9:
-    resolution: {integrity: sha512-1Qr+IhW0YG0HvMPkUNfLdEhZYvEe8Cj9byARmA8YmR+5r0ujgGBnu7VgMjyKMN4Jl2lXXcvygJPErOL1nJgwqA==}
-    dependencies:
-      '@retalkgo/api': 0.1.0-alpha.9
-      '@retalkgo/utils': 0.1.0-alpha.9
-      solid-js: 1.7.11
-    dev: false
-
-  /@retalkgo/utils@0.1.0-alpha.9:
-    resolution: {integrity: sha512-AxdtaTVlpCo/cXp99yUsNOPrOqaQ4YHsAc1C1dDXC78cuuQgAlofIKepKAcoEFkWHHPP2EfQ8lX/V8uxsomaKA==}
     dev: false
 
   /@rollup/pluginutils@3.1.0(rollup@2.79.1):
@@ -1312,10 +1286,6 @@ packages:
     dependencies:
       has-property-descriptors: 1.0.0
       object-keys: 1.1.1
-    dev: false
-
-  /defu@6.1.2:
-    resolution: {integrity: sha512-+uO4+qr7msjNNWKYPHqN/3+Dx3NFkmIzayk2L1MyZQlvgZb/J1A0fo410dpKrN2SnqFjt8n4JL8fDJE0wIgjFQ==}
     dev: false
 
   /dequal@2.0.3:
@@ -2370,11 +2340,6 @@ packages:
   /highlight.js@11.8.0:
     resolution: {integrity: sha512-MedQhoqVdr0U6SSnWPzfiadUcDHfN/Wzq25AkXiQv9oiOO/sG0S7XkvpFIqWBl9Yq1UYyYOOVORs5UW2XlPyzg==}
     engines: {node: '>=12.0.0'}
-    dev: false
-
-  /highlightjs@9.16.2:
-    resolution: {integrity: sha512-FK1vmMj8BbEipEy8DLIvp71t5UsC7n2D6En/UfM/91PCwmOpj6f2iu0Y0coRC62KSRHHC+dquM2xMULV/X7NFg==}
-    deprecated: Use the 'highlight.js' package instead https://npm.im/highlight.js
     dev: false
 
   /htmlparser2@7.2.0:
@@ -3702,11 +3667,6 @@ packages:
       randombytes: 2.1.0
     dev: false
 
-  /seroval@0.5.1:
-    resolution: {integrity: sha512-ZfhQVB59hmIauJG5Ydynupy8KHyr5imGNtdDhbZG68Ufh1Ynkv9KOYOAABf71oVbQxJ8VkWnMHAjEHE7fWkH5g==}
-    engines: {node: '>=10'}
-    dev: false
-
   /shebang-command@2.0.0:
     resolution: {integrity: sha512-kHxr2zZpYtdmrN1qDjrrX/Z1rR1kG8Dx+gkpK1G4eXmvXswmcE1hTWBWYUzlraYw1/yZp6YuDY77YtvbN0dmDA==}
     engines: {node: '>=8'}
@@ -3739,13 +3699,6 @@ packages:
   /slash@4.0.0:
     resolution: {integrity: sha512-3dOsAHXXUkQTpOYcoAxLIorMTp4gIQr5IW3iVb7A7lFIp0VHhnynm9izx6TssdrIcVIESAlVjtnO2K8bg+Coew==}
     engines: {node: '>=12'}
-    dev: false
-
-  /solid-js@1.7.11:
-    resolution: {integrity: sha512-JkuvsHt8jqy7USsy9xJtT18aF9r2pFO+GB8JQ2XGTvtF49rGTObB46iebD25sE3qVNvIbwglXOXdALnJq9IHtQ==}
-    dependencies:
-      csstype: 3.1.2
-      seroval: 0.5.1
     dev: false
 
   /sort-css-media-queries@2.2.0:
@@ -4097,11 +4050,6 @@ packages:
   /type-fest@0.20.2:
     resolution: {integrity: sha512-Ne+eE4r0/iWnpAxD852z3A+N0Bt5RN//NjJwRd2VFHEmrywxf5vsZlh4R6lixl6B+wz/8d+maTSAkN1FIkI3LQ==}
     engines: {node: '>=10'}
-    dev: false
-
-  /type-fest@4.3.1:
-    resolution: {integrity: sha512-pphNW/msgOUSkJbH58x8sqpq8uQj6b0ZKGxEsLKMUnGorRcDjrUaLS+39+/ub41JNTwrrMyJcUB8+YZs3mbwqw==}
-    engines: {node: '>=16'}
     dev: false
 
   /typed-array-length@1.0.4:
