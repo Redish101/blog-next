@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 
 import NavBar from "@/components/NavBar";
+import "@/components/key"
 import type { Metadata } from "next";
 import config from "@/../site.config";
 
