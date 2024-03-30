@@ -24,7 +24,7 @@ function getPostDesc(content: string) {
   return content
 }
 
-export default async function Home() {
+export default function Home() {
   const allPosts = getAllPosts(["title", "date", "slug", "cover", "content"]);
   return (
     <>
