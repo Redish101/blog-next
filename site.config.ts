@@ -38,10 +38,15 @@ const config: SiteConfig = {
       desc: "妙不可言",
       link: "https://blog.opeach.cn",
     },
-        {
+    {
       name: "呓语梦轩",
       desc: "用心感受生活",
       link: "https://blog.awaae001.top",
+    },
+    {
+      name: "清羽飞扬",
+      desc: "柳影曳曳，清酒孤灯，扬笔撒墨，心境如霜",
+      link: "https://www.qyliu.top",
     },
   ],
 };
