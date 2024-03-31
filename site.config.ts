@@ -4,7 +4,7 @@ const config: SiteConfig = {
   name: "Redish101 Blog",
   description: "人文 科技 白日梦",
   server: "http://localhost:8001",
-  hexo: true,
+  hexo: false,
   menu: [
     {
       key: "home",

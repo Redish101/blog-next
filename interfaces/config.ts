@@ -10,12 +10,12 @@ export interface FriendLink {
   link: string;
 }
 
-
 export interface SiteConfig {
   name: string;
   description: string;
   server: string;
   hexo?: boolean;
+  reblog?: boolean; // TODO: reblog 支持
   msg?: string;
   menu: MenuItem[];
   links?: FriendLink[];
