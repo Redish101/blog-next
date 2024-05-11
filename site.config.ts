@@ -48,6 +48,11 @@ const config: SiteConfig = {
       desc: "柳影曳曳，清酒孤灯，扬笔撒墨，心境如霜",
       link: "https://blog.qyliu.top",
     },
+    {
+      name: "辞琼",
+      desc: "突破了瓶颈，发现还有瓶盖qwq",
+      link: "https://blog.wsq127.top",
+    },
   ],
 };
 
