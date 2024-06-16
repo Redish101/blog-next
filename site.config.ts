@@ -53,6 +53,11 @@ const config: SiteConfig = {
       desc: "突破了瓶颈，发现还有瓶盖qwq",
       link: "https://blog.wsq127.top",
     },
+    {
+      name: "Lafcadia's Blog",
+      desc: "Et in Arcadia, ego.",
+      link: "https://chuishen.xyz",
+    },
   ],
 };
 
