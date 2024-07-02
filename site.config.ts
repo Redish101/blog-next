@@ -63,6 +63,11 @@ const config: SiteConfig = {
       desc: "Et in Arcadia, ego.",
       link: "https://chuishen.xyz",
     },
+    {
+      name: "葱苓sama",
+      desc: "Don't worry and Be happy.",
+      link: "https://blog.ciraos.top"
+    },
   ],
 };
 
