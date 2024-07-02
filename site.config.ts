@@ -63,6 +63,11 @@ const config: SiteConfig = {
       desc: "Et in Arcadia, ego.",
       link: "https://chuishen.xyz",
     },
+    {
+      na: "name"
+      descrio: "d"
+      link: "localhost"
+    }
   ],
 };
 
