@@ -58,6 +58,11 @@ const config: SiteConfig = {
       desc: "Et in Arcadia, ego.",
       link: "https://chuishen.xyz",
     },
+    {
+      name: "清羽飞扬",
+      desc: "柳影曳曳，清酒孤灯，扬笔撒墨，心境如霜",
+      link: "https://blog.qyliu.top",
+    },
   ],
 };
 
