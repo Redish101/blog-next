@@ -59,9 +59,9 @@ const config: SiteConfig = {
       link: "https://chuishen.xyz",
     },
     {
-      name: "免费机场",
-      desc: "免费机场",
-      link: "https://mfjc.com"
+      name: "lalllala",
+      desc: "lalall",
+      link: "https://alalall.tk"
     }
   ],
 };
