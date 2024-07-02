@@ -58,6 +58,12 @@ const config: SiteConfig = {
       desc: "Et in Arcadia, ego.",
       link: "https://chuishen.xyz",
     },
+    {
+      name: "星の野",
+      desc: "澳门新葡京上线啦，快和白夜一起来玩耍吧~",
+      link: "https://byer.top/",
+    },
+    
   ],
 };
 
