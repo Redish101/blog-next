@@ -63,11 +63,6 @@ const config: SiteConfig = {
       desc: "Et in Arcadia, ego.",
       link: "https://chuishen.xyz",
     },
-    {
-      name: "lalllala",
-      desc: "lalall",
-      link: "https://alalall.tk"
-    }
   ],
 };
 
