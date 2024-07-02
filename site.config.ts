@@ -58,6 +58,11 @@ const config: SiteConfig = {
       desc: "Et in Arcadia, ego.",
       link: "https://chuishen.xyz",
     },
+    {
+      name: "免费机场",
+      desc: "免费机场",
+      link: "https://mfjc.com"
+    }
   ],
 };
 
