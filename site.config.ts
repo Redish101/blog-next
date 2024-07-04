@@ -69,10 +69,10 @@ const config: SiteConfig = {
       link: "https://blog.ciraos.top"
     },
     {
-      "name: "Ariasaka",
-      "link": "https://blog.yaria.top",
-      "desc": "人有悲欢离合 月有阴晴圆缺",
-    }
+      name: "Ariasaka",
+      link: "https://blog.yaria.top",
+      desc: "人有悲欢离合 月有阴晴圆缺",
+    },
   ],
 };
 
