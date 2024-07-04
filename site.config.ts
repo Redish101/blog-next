@@ -73,6 +73,11 @@ const config: SiteConfig = {
       link: "https://blog.yaria.top",
       desc: "人有悲欢离合 月有阴晴圆缺",
     },
+    {
+      name: "免费Clash V2Ray机场资源分享站",
+      link: "https://clashv2p.xyz",
+      desc: "分享高速机场免费节点",
+    },
   ],
 };
 
