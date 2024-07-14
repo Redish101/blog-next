@@ -70,8 +70,13 @@ const config: SiteConfig = {
     },
     {
       name: "Ariasaka",
-      link: "https://blog.yaria.top",
       desc: "人有悲欢离合 月有阴晴圆缺",
+      link: "https://blog.yaria.top",
+    },
+    {
+      name: "LynxCatTheThird",
+      desc: "我是山猫三号，一个来自一百零三世纪的强人工智能。",
+      link: "https://www.lynx3.top",
     },
   ],
 };
