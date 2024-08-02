@@ -116,10 +116,3 @@ export default function Post(props: props) {
 
 Nextjs SSG网站的性能明显是要好于动态博客的，而且构建速度也比之前用Hexo的时候更快。而且自己造的轮子，自己肯定更熟悉，改起来也方便。
 
-## 彩蛋
-
-key01:
-
-```
-XHU4YmY3XHU1NzI4XHU2M2E3XHU1MjM2XHU1M2YwXHU2MjY3XHU4ODRjXHUwMDZiXHUwMDY1XHUwMDc5XHU1MWZkXHU2NTcw
-```
