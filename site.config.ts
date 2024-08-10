@@ -51,7 +51,7 @@ const config: SiteConfig = {
     {
       name: "清羽飞扬",
       desc: "柳影曳曳，清酒孤灯，扬笔撒墨，心境如霜",
-      link: "https://blog.qyliu.top",
+      link: "https://blog.liushen.fun",
     },
     {
       name: "辞琼",
