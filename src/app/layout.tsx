@@ -1,7 +1,5 @@
 import "@/styles/globals.css";
 
-import { Inter } from 'next/font/google'
-
 import NavBar from "@/components/NavBar";
 import "@/components/Key"
 import type { Metadata } from "next";
@@ -15,8 +13,6 @@ export const metadata: Metadata = {
   description: config.description,
 };
 
-const font = Inter({subsets: ['latin']})
-
 export default function RootLayout({
   children,
 }: {
@@ -27,7 +23,7 @@ export default function RootLayout({
       <head>
         <Clarity />
       </head>
-      <body className={font.className}>
+      <body>
         <NavBar />
         <Container>
           <LeftSidebar />

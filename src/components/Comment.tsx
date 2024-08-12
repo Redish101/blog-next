@@ -3,6 +3,12 @@
 import { useEffect } from "react";
 import config from "../../site.config";
 
+declare global {
+    interface Window {
+        twikoo?: any;
+    }
+}
+
 export default function Comment() {
     useEffect(() => {
         const script = document.createElement("script");
@@ -12,10 +18,11 @@ export default function Comment() {
             window.twikoo.init({
                 envId: config.twikoo.envId,
                 el: "#tcomment"
-            })
+            }
+            )
         }
 
         document.head.appendChild(script);
     }, [])
-    return <div id="tcomment">Comment</div>;
+    return <div id="tcomment">评论正在加载...</div>;
 }
