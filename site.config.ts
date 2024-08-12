@@ -79,6 +79,10 @@ const config: SiteConfig = {
       link: "https://www.lynx3.top",
     },
   ],
+  twikoo: {
+    js: "https://fastly.jsdelivr.net/npm/twikoo@1.6.39/dist/twikoo.all.min.js",
+    envId: "https://twikoo.redish101.top"
+  }
 };
 
 export default config;

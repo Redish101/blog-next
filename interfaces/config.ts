@@ -10,6 +10,11 @@ export interface FriendLink {
   link: string;
 }
 
+export interface TwikooConfig {
+  js: string;
+  envId: string;
+}
+
 export interface SiteConfig {
   name: string;
   description: string;
@@ -19,4 +24,5 @@ export interface SiteConfig {
   msg?: string;
   menu: MenuItem[];
   links?: FriendLink[];
+  twikoo: TwikooConfig;
 }

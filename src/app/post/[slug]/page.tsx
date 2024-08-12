@@ -1,5 +1,5 @@
 import Card from "@/components/Card";
-// import Comment from "@/components/Comment";
+import Comment from "@/components/Comment";
 import { getAllPosts, getPostBySlug } from "@/core";
 import markdownToHtml from "@/core/markdownToHtml";
 import config from "@/../site.config";
@@ -41,7 +41,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
     <Card title={post.title} cover={post.cover} label={post.date.toString()}>
       <div dangerouslySetInnerHTML={{ __html: content }} />
       {/* <div id="retalk"></div> */}
-      {/* <Comment /> */}
+      <Comment />
     </Card>
   );
 }
