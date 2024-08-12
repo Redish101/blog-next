@@ -88,9 +88,3 @@ cover: https://cdn1.tianli0.top/gh/Redish101/cdn@src/img/20231215194628.png
 ## 结语
 
 新年快乐。
-
-附，彩蛋：
-
-```text
-YrWgEXpubJvbeSPKFJaYbCaUoeicGW6fnADampEjDMTJqzMWceep2S1TJK6UbkWWqrLgdurkwFgpWuwNGcP3gKmA9M4fLuwCnP
-```
