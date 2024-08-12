@@ -35,6 +35,7 @@ export default function Home() {
               <PostCard
                 title={item.title}
                 cover={item.cover}
+                key={item.slug}
                 footer={
                   <Footer
                     date={moment(item.date).format("YYYY-MM-DD")}
