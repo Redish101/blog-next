@@ -1,9 +1,7 @@
-"use client"
+"use client";
 
 interface Window {
-    wow: () => void
+  wow: () => void;
 }
 
-window.wow = () => {
-    
-}
+window.wow = () => {};

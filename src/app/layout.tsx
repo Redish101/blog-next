@@ -1,11 +1,16 @@
 import "@/styles/globals.css";
 
 import NavBar from "@/components/NavBar";
-import "@/components/Key"
+import "@/components/Key";
 import type { Metadata } from "next";
 import config from "@/../site.config";
 
-import { Container, Content, LeftSidebar, RightSidebar } from "@/components/Layout";
+import {
+  Container,
+  Content,
+  LeftSidebar,
+  RightSidebar,
+} from "@/components/Layout";
 import Clarity from "@/components/Clarity";
 
 export const metadata: Metadata = {
@@ -27,9 +32,7 @@ export default function RootLayout({
         <NavBar />
         <Container>
           <LeftSidebar />
-          <Content>
-            { children }
-          </Content>
+          <Content>{children}</Content>
           <RightSidebar />
         </Container>
       </body>

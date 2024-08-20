@@ -11,7 +11,6 @@ export interface FriendLink {
 }
 
 export interface TwikooConfig {
-  js: string;
   envId: string;
 }
 

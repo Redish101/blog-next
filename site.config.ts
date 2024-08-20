@@ -1,6 +1,6 @@
-import { SiteConfig } from "./interfaces/config";
+import defineConfig from "@/core/config";
 
-const config: SiteConfig = {
+export default defineConfig({
   name: "Redish101 Blog",
   description: "人文 科技 白日梦",
   server: "http://localhost:8001",
@@ -66,7 +66,7 @@ const config: SiteConfig = {
     {
       name: "葱苓sama",
       desc: "Don't worry and Be happy.",
-      link: "https://blog.ciraos.top"
+      link: "https://blog.ciraos.top",
     },
     {
       name: "Ariasaka",
@@ -80,9 +80,6 @@ const config: SiteConfig = {
     },
   ],
   twikoo: {
-    js: "https://fastly.jsdelivr.net/npm/twikoo@1.6.39/dist/twikoo.all.min.js",
-    envId: "https://twikoo.redish101.top"
-  }
-};
-
-export default config;
+    envId: "https://twikoo.redish101.top",
+  },
+});

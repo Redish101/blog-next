@@ -38,7 +38,6 @@ export const getPostBySlug = cache((slug: string, fields: string[] = []) => {
       items[field] = data[field];
     }
   });
-  
 
   return items;
 });

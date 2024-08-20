@@ -23,7 +23,7 @@ module.exports = withStyle9({
     appDir: true,
   },
   images: {
-    unoptimized: true
+    unoptimized: true,
   },
   transpilePackages: ["style9"],
 });

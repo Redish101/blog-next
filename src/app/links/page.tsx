@@ -5,7 +5,7 @@ import Link from "next/link";
 
 import style9 from "style9";
 import Links from "@/components/Links";
-import { FriendLink } from "@/../interfaces/config";
+import { FriendLink } from "../../../types/config";
 
 const styles = style9.create({
   container: {
@@ -17,13 +17,12 @@ const styles = style9.create({
   item_text: { color: "var(--text)" },
 });
 
-
 export const metadata: Metadata = {
   title: `友情链接 - ${config.name}`,
 };
 
 export default async function FriendLinks() {
-  const data: FriendLink[] = config.links!
+  const data: FriendLink[] = config.links!;
   return (
     <div className={styles("container")}>
       {data.map((item) => {

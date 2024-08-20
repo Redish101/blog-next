@@ -6,7 +6,6 @@ import config from "@/../site.config";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-
 export async function generateMetadata({
   params,
 }: {
@@ -36,7 +35,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
     return notFound();
   }
   const content = await markdownToHtml(post.content || "");
-  
+
   return (
     <Card title={post.title} cover={post.cover} label={post.date.toString()}>
       <div dangerouslySetInnerHTML={{ __html: content }} />

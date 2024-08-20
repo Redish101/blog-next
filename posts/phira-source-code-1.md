@@ -110,11 +110,11 @@ async fn the_main() -> Result<()> {
                 expand_tilde: bool,
             ) -> *mut NSArray<*mut NSString>;
         }
-        let directories = NSSearchPathForDirectoriesInDomains(5, 1, true); 
+        let directories = NSSearchPathForDirectoriesInDomains(5, 1, true);
         let first: &mut NSString = msg_send![directories, firstObject];
         let path = first.as_str().to_owned();
         *DATA_PATH.lock().unwrap() = Some(path);
-        *CACHE_DIR.lock().unwrap() = Some("Caches".to_owned()); 
+        *CACHE_DIR.lock().unwrap() = Some("Caches".to_owned());
     }
 
     // 读取数据文件目录
@@ -236,4 +236,3 @@ async fn the_main() -> Result<()> {
     Ok(())
 }
 ```
-

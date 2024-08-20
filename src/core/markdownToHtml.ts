@@ -5,20 +5,20 @@ import md5 from "md5";
 export default async function markdownToHtml(markdown: string) {
   const renderer = new marked.Renderer();
 
-  let toc = []
+  let toc = [];
 
-  renderer.heading = function(text, level, raw, slugger) {
+  renderer.heading = function (text, level, raw, slugger) {
     toc.push({
       text,
-      level
-    })
-    let hashedText = md5(text).slice(0, 12)
+      level,
+    });
+    let hashedText = md5(text).slice(0, 12);
     return `
       <h${level} id="${hashedText}">
         ${text}
       </h${level}>
-    `
-  }
+    `;
+  };
 
   renderer.code = function (code, language) {
     // 添加hljs类和data-language属性

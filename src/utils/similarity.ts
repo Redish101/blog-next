@@ -1,27 +1,31 @@
 import { cache } from "react";
 
-const calculateWordFrequency = cache((text: string): { [word: string]: number } => {
-  const wordFrequency: { [word: string]: number } = {};
-  const words = text.toLowerCase().split(/\W+/);
+const calculateWordFrequency = cache(
+  (text: string): { [word: string]: number } => {
+    const wordFrequency: { [word: string]: number } = {};
+    const words = text.toLowerCase().split(/\W+/);
 
-  for (const word of words) {
-    if (word.trim() !== "") {
-      wordFrequency[word] = (wordFrequency[word] || 0) + 1;
+    for (const word of words) {
+      if (word.trim() !== "") {
+        wordFrequency[word] = (wordFrequency[word] || 0) + 1;
+      }
     }
-  }
 
-  return wordFrequency;
-})
+    return wordFrequency;
+  },
+);
 
-const calculateVectorMagnitude = cache((vector: { [word: string]: number }): number => {
-  let magnitude = 0;
+const calculateVectorMagnitude = cache(
+  (vector: { [word: string]: number }): number => {
+    let magnitude = 0;
 
-  for (const key in vector) {
-    magnitude += Math.pow(vector[key], 2);
-  }
+    for (const key in vector) {
+      magnitude += Math.pow(vector[key], 2);
+    }
 
-  return Math.sqrt(magnitude);
-})
+    return Math.sqrt(magnitude);
+  },
+);
 
 const similarity = cache((text1: string, text2: string): number => {
   const wordFrequency1 = calculateWordFrequency(text1);
@@ -51,6 +55,6 @@ const similarity = cache((text1: string, text2: string): number => {
   const similarity = dotProduct / (magnitude1 * magnitude2);
 
   return similarity;
-})
+});
 
 export { similarity };

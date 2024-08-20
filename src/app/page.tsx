@@ -19,9 +19,9 @@ function Footer(props: { date: string; url: string }) {
 }
 
 function getPostDesc(content: string) {
-  content = content.replaceAll("#", "").slice(0, 150) + "..."
-  content = content.replaceAll("`", "")
-  return content
+  content = content.replaceAll("#", "").slice(0, 150) + "...";
+  content = content.replaceAll("`", "");
+  return content;
 }
 
 export default function Home() {
@@ -44,9 +44,7 @@ export default function Home() {
                 }
                 slug={item.slug}
               >
-                {
-                  getPostDesc(item.content)
-                }
+                {getPostDesc(item.content)}
               </PostCard>
             </>
           );

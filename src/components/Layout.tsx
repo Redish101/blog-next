@@ -6,7 +6,6 @@ import { getAllPosts } from "@/core";
 import Link from "next/link";
 
 import style9 from "style9";
- 
 
 const styles = style9.create({
   container: {
@@ -63,7 +62,7 @@ const styles = style9.create({
     width: "100%",
     margin: "0 auto",
     "@media screen and (max-width: 785px)": {
-      marginTop: '2.5rem'
+      marginTop: "2.5rem",
     },
   },
   random: {
@@ -81,32 +80,25 @@ interface LayoutProps {
 
 const posts = getAllPosts(["title", "slug", "date"]).splice(0, 4);
 
-export function Container({ children }: { children: ReactNode}) {
-  return (
-    <div className={styles('container')}>
-      { children }
-    </div>
-  )
+export function Container({ children }: { children: ReactNode }) {
+  return <div className={styles("container")}>{children}</div>;
 }
 
 export function LeftSidebar() {
   return (
     <aside className={styles("sidebar")}>
-        <Avatar />
-        <Count />
-      </aside>
-  )
+      <Avatar />
+      <Count />
+    </aside>
+  );
 }
 
 export function Content({ children }: { children: ReactNode }) {
-  return (
-    <div className={styles("main")}>{children}</div>
-  )
+  return <div className={styles("main")}>{children}</div>;
 }
 
 function LatestPosts() {
   return (
-    
     <Card label="最近文章">
       {posts.map((item) => {
         return (
@@ -120,7 +112,7 @@ function LatestPosts() {
         );
       })}
     </Card>
-  )
+  );
 }
 
 export function RightSidebar() {
@@ -128,5 +120,5 @@ export function RightSidebar() {
     <div className={styles("sidebar_r")}>
       <LatestPosts />
     </div>
-  )
+  );
 }
